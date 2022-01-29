@@ -1,0 +1,26 @@
+year=2013:2017;
+pop=[.9,1.4,1.7,1.3,1.8];
+
+subplot(1,2,1)
+title('population chart')
+
+subplot(2,2,1)
+bar(year,pop)
+title('bar')
+xlabel('year')
+ylabel('population (mil.)')
+subplot(2,2,2)
+barh(year,pop)
+title('barh')
+xlabel('population  (mil.)')
+ylabel('year')
+subplot(2,2,3)
+area(year,pop)
+title('area')
+xlabel('year')
+ylabel('population (mil.)')
+subplot(2,2,4)
+stem(year,pop)
+xlabel('year')
+title('stem')
+ylabel('population (mil.)')

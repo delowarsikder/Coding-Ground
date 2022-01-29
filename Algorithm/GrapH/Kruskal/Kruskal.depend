@@ -1,0 +1,19 @@
+# depslib dependency file v1.0
+1538584989 source:d:\programm\codepractice\graph\kruskal\main.cpp
+	<iostream>
+	<vector>
+	<utility>
+	<fstream>
+	<stdlib.h>
+	<algorithm>
+	<list>
+
+1540456000 source:d:\practice\c__c++\graph\kruskal\main.cpp
+	<iostream>
+	<vector>
+	<utility>
+	<fstream>
+	<stdlib.h>
+	<algorithm>
+	<list>
+

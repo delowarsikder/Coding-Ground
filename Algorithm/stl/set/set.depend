@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1539419505 source:d:\programm\codepractice\stl\set\main.cpp
+	<iostream>
+	<set>
+

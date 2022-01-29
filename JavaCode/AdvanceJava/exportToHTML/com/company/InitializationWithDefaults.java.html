@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>InitializationWithDefaults.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #008000; font-weight: bold;}
+.s3 { color: #808080; font-style: italic;}
+.s4 { color: #0000ff;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+InitializationWithDefaults.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span>com.company;
+
+<span class="s0">import </span>javafx.stage.Stage;
+
+<span class="s0">public class </span>InitializationWithDefaults <span class="s0">extends </span>javafx.application.Application {
+    <span class="s0">static </span>{
+        System.out.println(<span class="s2">&quot;InitializationWithDefaults.static initializer&quot;</span>);
+    }
+<span class="s3">//    public static void main(String[] args) {</span>
+//
+//        final InitializationWithDefaults initializationWithDefaults =new InitializationWithDefaults();
+////        System.out.println(&quot;Hello world!&quot;);
+//    }
+    {
+        System.out.println(<span class="s2">&quot;InitializationWithDefaults.instance initializer&quot;</span>);
+    }
+    <span class="s0">private boolean </span>aBoolean;
+    <span class="s0">private byte </span>aByte;
+    <span class="s0">private short </span>aShort;
+    <span class="s0">private  int </span>anInt;
+    <span class="s0">private  long </span>aLong;
+    <span class="s0">private char </span>aChar;
+    <span class="s0">private float </span>aFloat;
+    <span class="s0">private  double </span>aDouble;
+    <span class="s0">private </span>Object object;
+
+
+    <span class="s0">public </span>InitializationWithDefaults(){
+        System.out.println(<span class="s2">&quot;Boolean Member = &quot;</span>+aBoolean);
+        System.out.println(<span class="s2">&quot;byte Member = &quot;</span>+aByte);
+        System.out.println(<span class="s2">&quot;short Member = &quot;</span>+aShort);
+        System.out.println(<span class="s2">&quot;Int member = &quot;</span>+anInt);
+        System.out.println(<span class="s2">&quot;Long Member = &quot;</span>+aLong);
+        System.out.println(<span class="s2">&quot;Char Member =&quot;</span>+aChar);<span class="s3">//nothing print</span>
+        System.out.println(<span class="s2">&quot;Char Member =&quot;</span>+Character.codePointAt(<span class="s0">new char</span>[] {aChar},<span class="s4">0</span>));
+        System.out.println(<span class="s2">&quot;Float Member =&quot;</span>+aFloat);
+        System.out.println(<span class="s2">&quot;Double Member=&quot;</span>+aDouble);
+        System.out.println(<span class="s2">&quot;referenceMember =&quot;</span>+object);
+    }
+<span class="s3">//it is work same as main function</span>
+    @Override
+    <span class="s0">public void </span>start(Stage primaryStage) <span class="s0">throws </span>Exception {
+        System.out.println(<span class="s2">&quot;InitializationWithDefaults.start&quot;</span>);
+    }
+}
+
+</pre>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1543980436 source:d:\practice\c__c++\graph\weightedlist\main.cpp
+	<iostream>
+	<vector>
+	<fstream>
+	<utility>
+	<list>
+

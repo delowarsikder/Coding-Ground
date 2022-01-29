@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+/// Typedef
+typedef long long int ll;
+#define FastIO  ios_base::sync_with_stdio(false); cin.tie(0);
+#define sc1(a) scanf("%lld",&a)
+#define sc2(a,b) scanf("%lld %lld",&a,&b)
+#define sc3(a,b,c) scanf("%lld %lld %lld",&a,&b,&c)
+#define pf1(a) printf("%lld\n",a)
+#define pf2(a,b) printf("%lld %lld\n",a,b)
+#define pf3(a,b,c) printf("%lld %lld %lld\n",a,b,c)
+#define fr1(n) for(i=0;i<n;i++)
+#define fr2(n) for(i=1;i<n;i++)
+#define fr3(i,a,b) for(i=a;i<=b;i++)
+#define mx 1000005
+#define mod 10000007
+#define for1(a,b) for(ll i=a; i<b; i++)
+#define rev(v) reverse(v.begin(),v.end())
+#define srt(v) sort(v.begin(),v.end())
+#define pb(a) push_back(a)
+typedef vector<ll> vii;
+typedef pair<ll ll> pll;
+typedef make_pair(ll a,ll b) mp(a,b); 
+
+#define grtsrt(v) sort(v.begin(),v.end(),greater<ll>())
+#define gcd(a,b)  __gcd(a,b)

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1538674050 source:d:\programm\codepractice\graph\prim's\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<list>
+	<utility>
+
+1540406975 source:d:\practice\c__c++\graph\prim's\main.cpp
+	<iostream>
+	<vector>
+	<queue>
+	<list>
+	<utility>
+

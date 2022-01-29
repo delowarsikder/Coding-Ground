@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1540693122 source:d:\practice\c__c++\graph\fractional_knapsack\main.cpp
+	<iostream>
+	<algorithm>
+	<utility>
+	<vector>
+

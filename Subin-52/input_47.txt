@@ -1,0 +1,9 @@
+
+IPv4 address:	192.168.43.150
+IPv4 DNS servers:	192.168.43.1
+Manufacturer:	Intel Corporation
+Description:	Intel(R) Dual Band Wireless-AC 3168
+Driver version:	19.51.14.1
+Physical address (MAC):	30-E3-7A-FE-27-16
+
+Delowar 

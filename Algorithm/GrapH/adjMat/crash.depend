@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1537814304 source:d:\programm\codepractice\graph\crash\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+
+1537814304 source:d:\programm\codepractice\graph\adjmat\main.cpp
+	<iostream>
+	<bits/stdc++.h>
+

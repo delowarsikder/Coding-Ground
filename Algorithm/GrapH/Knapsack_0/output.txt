@@ -1,0 +1,8 @@
+Enter total item no :
+Enter Knapsack size :
+knapsack input:8
+Enter item price && weight :
+Maximum profit :29
+Select Item :4
+Select Item :3
+Select Item :1

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1543985552 source:d:\practice\c__c++\graph\bfs_test\main.cpp
+	<iostream>
+	<vector>
+	<list>
+	<utility>
+	<queue>
+
