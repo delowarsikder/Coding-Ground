@@ -1,0 +1,11 @@
+E:\Programming\cSharp\RectangleArea\bin\Debug\netcoreapp2.1\RectangleArea.deps.json
+E:\Programming\cSharp\RectangleArea\bin\Debug\netcoreapp2.1\RectangleArea.runtimeconfig.json
+E:\Programming\cSharp\RectangleArea\bin\Debug\netcoreapp2.1\RectangleArea.runtimeconfig.dev.json
+E:\Programming\cSharp\RectangleArea\bin\Debug\netcoreapp2.1\RectangleArea.dll
+E:\Programming\cSharp\RectangleArea\bin\Debug\netcoreapp2.1\RectangleArea.pdb
+E:\Programming\cSharp\RectangleArea\obj\Debug\netcoreapp2.1\RectangleArea.csprojAssemblyReference.cache
+E:\Programming\cSharp\RectangleArea\obj\Debug\netcoreapp2.1\RectangleArea.csproj.CoreCompileInputs.cache
+E:\Programming\cSharp\RectangleArea\obj\Debug\netcoreapp2.1\RectangleArea.AssemblyInfoInputs.cache
+E:\Programming\cSharp\RectangleArea\obj\Debug\netcoreapp2.1\RectangleArea.AssemblyInfo.cs
+E:\Programming\cSharp\RectangleArea\obj\Debug\netcoreapp2.1\RectangleArea.dll
+E:\Programming\cSharp\RectangleArea\obj\Debug\netcoreapp2.1\RectangleArea.pdb

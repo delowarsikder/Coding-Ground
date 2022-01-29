@@ -1,14 +1,41 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
-#define FastIO ios::sync_with_stdio(0), cin.tie(0);
-#define size 3
+#define FastIO ios::sync_with_stdio(0),cin.tie(0);
 #define null -1
-int q[size];
-int front = null, rear = null;
-
-bool isFull() //check overflow
+#define endl '\n'
+//using class
+class Queue
 {
-    if ((front == 0 && rear == size - 1) || (front == rear + 1))
+    int front,rear,size;
+    int* que;//our queue container
+public:
+    Queue(int n)
+    {
+        front =null;
+        rear=null;
+        size=n;
+        que=new int[n];
+//        que=new int[(n * sizeof(int))];
+        memset(que,-1,n);
+    }
+
+    bool isFull();
+    bool isEmpty();
+    int dequeue();
+    int enqueue(int);
+    int fr()
+    {
+        cout<<"front item :"<<que[front]<<endl;
+    }
+    ~Queue()
+    {
+        delete[] que;
+    }
+};
+
+bool Queue::isFull() //check overflow
+{
+    if((front==0 && rear==size-1) || (front == rear+1))
     {
         return true;
     }
@@ -18,9 +45,9 @@ bool isFull() //check overflow
     }
 }
 
-bool isEmpty() //check underflow
+bool Queue::isEmpty()//check underflow
 {
-    if (front == null)
+    if(front==null)
     {
         return true;
     }
@@ -30,69 +57,69 @@ bool isEmpty() //check underflow
     }
 }
 
-int enqueue(int n)
+int Queue::enqueue(int n)
 {
-    if (isFull())
+    if(isFull())
     {
-        cout << "Overflow the queue" << endl;
-        return INT_MIN;
+        cout<<"Overflow the queue"<<endl;
+        return 0;
     }
-    if (front == null)
+    if(front==null)
     {
-        front = 0;
-        rear = 0;
+        front =0;
+        rear=0;
     }
-    else if (rear == size)
+    else if (rear==size)
     {
-        rear = rear % size;
+        rear=rear%size;
     }
     else
     {
         rear++;
     }
-    cout << "insert item :" << n << endl;
-    q[rear] = n;
+    que[rear]=n;
+    cout<<"insert item :"<<que[rear]<<endl;
 }
 
-int dequeue()
+int Queue::dequeue()
 {
-    if (isEmpty())
+    if(isEmpty())
     {
-        cout << "Underflow queue" << endl;
-        return INT_MIN;
+        cout<<"Underflow queue"<<endl;
+        return 0;
     }
-    int item = q[front];
-    if (front == rear)
+    int item=que[front];
+    if(front==rear)
     {
-        front = null;
-        rear = null;
+        front =null;
+        rear=null;
     }
-    else if (front == size)
+    else if(front == size)
     {
-        front = front % size;
+        front =front%size;
     }
     else
     {
         front++;
     }
-    return item;
+    cout<<"dequeue item :"<<item<<endl;
+//    return item;
 }
 
 int main()
 {
     FastIO;
-    enqueue(10);
-    enqueue(20);
-    dequeue();
-    cout << front << " " << rear << endl;
-    enqueue(30);
-    enqueue(40);
+    Queue Q(20);
 
-    cout << "dequeue item :" << dequeue() << endl;
-    cout << "dequeue item :" << dequeue() << endl;
-    cout << "dequeue item :" << dequeue() << endl;
-    cout << "dequeue item :" << dequeue() << endl;
-    cout << "dequeue item :" << dequeue() << endl;
-    cout << "dequeue item :" << dequeue() << endl;
+    Q.enqueue(10);
+    Q.enqueue(20);
+    Q.enqueue(30);
+    Q.enqueue(60);
+    Q.dequeue();
+    Q.dequeue();
+    Q.dequeue();
+    Q.dequeue();
+//    Q.dequeue();
+//    Q.dequeue();
     return 0;
 }

@@ -1,0 +1,47 @@
+body {
+    width: 30%;
+}
+
+.show {
+    background-color: lightgray;
+    border: solid;
+    height: 48px;
+    font-size: 20px;
+}
+
+.buttonContainer>.buttonClass> {
+    width: 30%;
+    height: 48px;
+    font-size: 24px;
+    position: absolute;
+}
+
+.buttonContainer>.buttonClass>.btn_number {
+    background-color: lightgreen;
+    color: brown;
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    margin: 0px;
+    float: left;
+}
+
+.buttonContainer>.buttonClass>.btn_clear {
+    background-color: darkgreen;
+    color: white;
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    margin: 0px;
+    float: left;
+}
+
+.buttonContainer>.buttonClass>.btn_operator {
+    background-color: black;
+    color: red;
+    width: 25%;
+    height: 36px;
+    font-size: 18px;
+    margin: 0px;
+    float: left;
+}
