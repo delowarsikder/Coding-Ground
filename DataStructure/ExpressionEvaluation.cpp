@@ -57,7 +57,7 @@ string infix2Postfix(string str)
         {
             continue;
         }
-        else if (isOperand(str[i]))
+        else if (isOperand(str[i]))//number
         {
             string val = "";
             while (isOperand(str[i]) && i < str.length())
