@@ -1,47 +1,44 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-#define FastIO ios::sync_with_stdio(0);cin.tie(0);
+
+#define FastIO               \
+    ios::sync_with_stdio(0); \
+    cin.tie(0);
 typedef long long ll;
+
+void lpsCalculation(string s, vector<int> &lps)
+{
+}
 
 int main()
 {
     FastIO;
-    ll caseNo=0;
+    ll caseNo = 0;
     ll tc;
-    cin>>tc; // first case
-    while(tc--)
+    cin >> tc; // first case
+    while (tc--)
     {
-        cout<<"Case "<<++caseNo<<":"<<endl;
-        ll n;
-        string sample;
-        cin>>n>>sample; // string+ number
-        ll len_sample=sample.length();
-        while(n--)
+        map<string, int> mp;
+        cout << "Case " << ++caseNo << ":" << endl;
+        ll n; // second test case
+        string str;
+        map<string, vector<int>> lpsList; // pattern with own lps vector
+        cin >> n >> str;
+        for (int i = 0; i < n; i++)
         {
-            string test; //checker
-            cin>>test;
-            ll len_test=test.length();
-            bool flag=true;
-            ll counter=0;
-            for(ll i=0; i<(len_sample-len_test)+1; i++)
-            {
-                flag=true;
-                for(ll k=i,j=0; j<len_test; j++,k++)
-                {
-                    if(sample[k]!=test[j])
-                    {
-                        flag=false;
-                        break;
-                    }
-                }
-                if(flag)
-                {
-                    counter++;
-                }
-            }
-            cout<<counter<<endl;
-        }
+            string ptrn;
+            cin >> ptrn;
+            int ptrnLen = ptrn.length();
+            vector<int> LPS;
 
+            if (lpsList.find(ptrn) == lpsList.end())
+            {
+                lpsCalculation(ptrn, LPS);
+            }
+
+            // pass into pattern match
+        }
     }
+
     return 0;
 }
